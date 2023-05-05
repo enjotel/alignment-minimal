@@ -1,0 +1,395 @@
+\documentclass[10pt]{memoir}
+\setstocksize{220mm}{155mm} 	        
+\settrimmedsize{220mm}{155mm}{*}	
+\settypeblocksize{170mm}{116mm}{*}	
+\setlrmargins{18mm}{*}{*}
+\setulmargins{*}{*}{1.2}
+%\setlength{\headheight}{5pt}
+\checkandfixthelayout[lines]
+\linespread{1.16}
+
+%%% Hyphenation settings
+\usepackage{hyphenat}
+\hyphenation{he-lio-trope opos-sum}
+\tracingparagraphs=1
+%Hyphenation in Devanāgarī of the edition still missing? Probably this needs to be modified in babel-iast package? 
+
+%%% babel
+\usepackage[english]{babel}
+\usepackage{babel-iast/babel-iast}
+\babelfont[iast]{rm}[Renderer=Harfbuzz, Scale=1.3]{AdishilaSan}%AdishilaSan}
+\babelfont[english]{rm}{Adobe Text Pro}
+
+%%% footnote without a marker
+%\newcommand\blfootnote[1]{%
+%\begingroup
+%\renewcommand\thefootnote{}\footnote{\noindent #1}%
+%\addtocounter{footnote}{-1}%
+%\endgroup
+%}
+
+\makeatletter
+\def\blfootnote{\gdef@thefnmark{}@footnotetext}
+\makeatother
+
+%\renewcommand{\blfootnote}{\arabic{footnote})}
+
+%\makeatletter
+%5\def@makefntext#1{%
+%\noindent
+%\makebox[0.75em][l]{@thefnmark.}%
+%\hspace{0.25em}#1}
+%\makeatother
+
+%\usepackage{etoolbox}
+%\newcounter{blfootnote}
+%\newenvironment{blfootnote}[1][]
+%{\refstepcounter{blfootnote}%
+%\begingroup%
+%\def\thefootnote{\arabic{blfootnote}}%
+%\ifstrempty{#1}{}{\noindent\hangindent=0.75em\hangafter=1 #1}\footnotetext}
+%{\endgroup}
+  
+%%% more functionality
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{cleveref}
+\usepackage{microtype}
+\usepackage{lineno}
+%\usepackage{bigfoot}
+%%% more functions
+\usepackage[dvipsnames]{xcolor}
+%\usepackage[flushmargin]{footmisc}
+
+%%%für den Counter von Kapiteln und Sätzen! 
+\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+\newcommand{\lowroman}[1]{\romannumeral#1\relax}
+
+\makeindex
+\newfontfamily\sanskritfont[Script=Devanagari,Mapping=RomDev,Scale=1.1]{Sanskrit2003}
+\usepackage{pifont,fourier-orns,lettrine,psvectorian,paralist,enumitem,pdfpages,wrapfig,tabulary,lettrine,longtable}
+\setlist[enumerate]{itemsep=0mm}
+\usepackage[autostyle]{csquotes}
+\usepackage[defaultlines=2,all]{nowidow}
+\usepackage{ellipsis,adforn,booktabs,longtable,url,tikz}
+\lineskiplimit=-3pt          
+
+\makechapterstyle{IeT}{%
+  \chapterstyle{default}
+  \renewcommand*{\printchapternonum}{\centering}
+  \renewcommand*{\clearforchapter}{\cleartorecto} 
+  \aliaspagestyle{chapter}{empty}}
+\chapterstyle{IeT}
+\setsecnumdepth{none}  \openright  \nouppercaseheads
+\settocdepth{subsubsection}
+
+%%%% test better pagebreaks
+\def\fussy{%
+  \emergencystretch\z@
+  \tolerance 200%
+  \hfuzz .1\p@
+  \vfuzz\hfuzz}
+
+\interfootnotelinepenalty=10000\relax
+
+\usepackage[maxfloats=256]{morefloats}
+
+\maxdeadcycles=500
+
+\raggedbottomsectiontrue
+\checkandfixthelayout
+
+%%%
+%\setlength{\parskip}{2cm plus0.5cm minus0.5cm}
+
+%%%%%%%  biblatex
+\newcommand{\noun}[1]{\textsc{#1}}    %  philosophy-verbose
+\usepackage[backend=biber, sorting=nyt, style=verbose]{biblatex} %%%%ORIGINAL TiE
+\renewcommand*{\mkbibnamefamily}[1]{\textsc{#1}}
+% scauthors=all, publocformat=locpubyear,
+% inbeforejournal=true, volnumformat=plain,relatedformat=parens
+%\renewcommand*{\volnumpunct}{.}
+%\addbibresource{GYS-Iet.bib}
+
+\DeclareFieldFormat{url}{%
+  \mkbibacro{URL}\addcolon\space
+  \href{#1}{\nolinkurl{\thefield{urlraw}}}}
+
+\DeclareFieldFormat{citeurl}{%
+  \href{#1}{\nolinkurl{\thefield{urlraw}}}} 
+
+
+%Index
+%\usepackage[backend=biber, bibstyle=verbose, citestyle=authoryear]{biblatex}
+%
+%\DefineBibliographyStrings{german}{
+%  references = {Literaturverzeichnis},
+%  bibliography = {Bibliographie},
+%  shorthands = {Abkürzungen der Zeugen des kritischen Apparatus},
+%}
+
+%\makeatletter
+%\renewcommand*{\mkbibnamefamily}[1]{%
+%  \ifdefstring{\blx@delimcontext}{parencite}
+%    {\textsc{#1}}
+%    {#1}}
+%\makeatother
+
+\DeclareFieldFormat{postnote}{#1}
+\renewcommand{\postnotedelim}{, }
+\addbibresource{bindu.bib}
+
+%%% ekdosis
+\usepackage[teiexport=tidy,parnotes=true]{ekdosis}% =tidy cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards. parnotes=footnotes below or above critical apparatus
+
+\SetLineation{lineation=page} %lineation=pagesets thenumbering to start afresh at the top of each page. modulo makes every fifth line numbered. 
+
+\renewcommand{\linenumberfont}{\selectlanguage{english}\footnotesize} %sets language of lines to English
+
+\SetTEIxmlExport{autopar=false} %autopar=falseinstructs ekdosis to ignore blank lines in the.tex sourcefile as markers for paragraph boundaries. As a result, each paragraph of the edition must be found within an environment associated with the xml <p> element
+
+\SetHooks{
+  lemmastyle=\bfseries,
+  %refnumstyle=\selectlanguage{english}\bfseries,
+  refnumstyle=\selectlanguage{english}\color{blue}\bfseries,
+  appheight=0.8\textheight,
+}
+
+% Declare \ifinapparatus and set \inapparatustrue at the beginning of
+% the apparatus criticus block. Also set the language.  
+\newif\ifinapparatus
+  \DeclareApparatus{default}[
+  %bhook=\inapparatustrue, 
+  lang=english,
+  %maxentries=33,
+  %bhook=\selectlanguage{english},
+  sep = {] },
+  delim=\hskip 0.75em,
+  rule=\rule{0.7in}{0.4pt},
+]
+
+\newif\ifinapparatus
+\DeclareApparatus{source}[
+%bhook=\inapparatustrue,
+lang=english,
+notelang=english,
+% bhook=\selectlanguage{english},
+bhook=\selectlanguage{english}\textbf{Sources:},%
+%maxentries=4, 
+%ehook=.]
+%sep={: },
+]
+
+\newif\ifinapparatus
+\DeclareApparatus{testium}[
+%bhook=\inapparatustrue,
+lang=english,
+notelang=english,
+% bhook=\selectlanguage{english},
+bhook=\selectlanguage{english}\textbf{Testimonia:},
+%maxentries=4, 
+%ehook=.]
+%sep={: },
+]
+
+\newif\ifinapparatus
+\DeclareApparatus{philcomm}[
+%bhook=\inapparatustrue,
+lang=english,
+notelang=english,
+bhook=\selectlanguage{english}\textbf{Philological Commentary:},
+%bhook=\selectlanguage{english},
+sep={: },
+]
+
+\ekdsetup{
+showpagebreaks,
+spbmk = \textcolor{blue}{spb},
+hpbmk = \textcolor{red}{hpb}
+}
+
+% Macros and Definitions for the Print of Sigla
+\def\acpc#1#2#3{{#1}\rlap{\textrm{\textsuperscript{#3}}}\textsubscript{\textrm{#2}}\space}
+\def\sigl#1#2{{{#1}}\textsubscript{\textrm{#2}}}
+\def\None{{\sigl{N}{1}}} \def\Noneac{\acpc{N}{1}{ac}\,} \def\Nonepc{\acpc{N}{1}{pc}\,}
+\def\Ntwo{{\sigl{N}{2}}} \def\Noneac{\acpc{N}{2}{ac}\,} \def\Nonepc{\acpc{N}{2}{pc}\,}
+\def\Done{{\sigl{D}{1}}} \def\Doneac{\acpc{D}{1}{ac}\,} \def\Donepc{\acpc{D}{1}{pc}\,}
+\def\Dtwo{{\sigl{D}{2}}} \def\Dtwoac{\acpc{D}{2}{ac}\,} \def\Dtwopc{\acpc{D}{2}{pc}\,}
+\def\Uone{{\sigl{U}{1}}} \def\Uoneac{\acpc{U}{1}{ac}\,} \def\Uonepc{\acpc{U}{1}{pc}\,}                 
+\def\Utwo{{\sigl{U}{2}}} \def\Utwoac{\acpc{U}{2}{ac}\,} \def\Utwopc{\acpc{U}{2}{pc}\,}
+
+%%%%%%%%%%%%%% Tattvabinduyoga - List of Witnesses   %%%%%%%%%%%%%%%%%%%
+\DeclareWitness{ceteri}{\selectlanguage{english}cett.}{ceteri}[]   
+\DeclareWitness{E}{\selectlanguage{english}E}{Printed Edition}[]    
+\DeclareWitness{P}{\selectlanguage{english}P}{Pune BORI 664}[]  
+\DeclareWitness{B}{\selectlanguage{english}B}{Bodleian 485}[]       
+\DeclareWitness{N1}{\selectlanguage{english}N\textsubscript{1}}{NGMPP 38/31}[]
+\DeclareWitness{N2}{\selectlanguage{english}N\textsubscript{2}}{NGMPP B 38/35}[]
+\DeclareWitness{L}{\selectlanguage{english}L}{LALCHAND 5876}[]  
+\DeclareWitness{D}{\selectlanguage{english}D}{IGNCA 30019}[] 
+%\DeclareWitness{D2}{\selectlanguage{english}D\textsubscript{2}}{IGNCA 30020}[]  
+\DeclareWitness{U1}{\selectlanguage{english}U\textsubscript{1}}{SORI 1574}[] 
+\DeclareWitness{U2}{\selectlanguage{english}U\textsubscript{2}}{SORI 6082}[]
+%%%%%%%%%%%%%% Tattvabinduyoga - Groups of Witnesses   %%%%%%%%%%%%%%%%%%%
+\DeclareWitness{X}{\selectlanguage{english}\alpha}{Alpha Group: D,N1,N2,U1}[]
+\DeclareWitness{Y}{\selectlanguage{english}\beta}{Beta Group: B,E,L,P,U2}[]
+%%%%%%%%%%%%% Testimonia
+\DeclareWitness{Ysv}{\selectlanguage{english}Ysv}{Yogasvarodaya}[] %%%add infos!  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro for Editing Abbrevs.
+\def\om{\textrm{\footnotesize \textit{om.}\ }} %prints om. for omitted in apparatus
+\def\korr{\textrm{\footnotesize \textit{em.}\ }} %prints em. for emended in apparatus
+\def\conj{\textrm{\footnotesize \textit{conj.}\ }} %prints conj. for conjectured in apparatus
+
+% \supplied{text} EDITORIAL ADDITION -> Within \lem oder \rdg
+% \surplus{text} EDITORIAL DELETION -> Within \lem oder \rdg
+% \sic{text} CRUX
+% \gap{text} LACUNAE -> [reason=??, unit=??, quantity=??, extent=??]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% All macros of this list can be used in 
+% Macro for Editing Abbrevs.
+\def\eyeskip{\textrm{{ab.\,oc. }}}
+\def\aberratio{\textrm{{ab.\,oc. }}}
+\def\ad{\textrm{{ad}}}
+\def\add{\textrm{{add.\ }}}
+\def\ann{\textrm{{ann.\ }}}
+\def\ante{\textrm{{ante }}} 
+\def\post{\textrm{{post }}}
+%\def\ceteri{cett.\,}                   
+\def\codd{\textrm{{codd.\ }}}
+
+\def\coni{\textrm{{coni.\ }}}
+\def\contin{\textrm{{contin.\ }}}
+\def\corr{\textrm{{corr.\ }}}
+\def\del{\textrm{{del.\ }}}
+\def\dub{\textrm{{ dub.\ }}}
+
+\def\expl{\textrm{{explic.\ }}} 
+\def\explica t{\textrm{{explic.\ }}}
+\def\fol{\textrm{{fol.\ }}}
+\def\foll{\textrm{{foll.\ }}}
+\def\gloss{\textrm{{glossa ad }}}
+\def\ins{\textrm{{ins.\ }}}      
+\def\inseruit{\textrm{{ins.\ }}} 
+\def\im{{\kern-.7pt\lower-1ex\hbox{\textrm{\tiny{\emph{i.m.}}}\kern0pt}}} %\textrm{\scriptsize{i.m.\ }}}      
+\def\inmargine{{\kern-.7pt\lower-.7ex\hbox{\textrm{\tiny{\emph{i.m.}}}\kern0pt}}}%\textrm{\scriptsize{i.m.\ }}}      
+\def\intextu{{\kern-.7pt\lower-.95ex\hbox{\textrm{\tiny{\emph{i.t.}}}\kern0pt}}}%\textrm{\scriptsize{i.t.\ }}}           
+\def\indist{\textrm{{indis.\ }}}  
+\def\indis{\textrm{{indis.\ }}}
+\def\iteravit{\textrm{{iter.\ }}} 
+\def\iter{\textrm{{iter.\ }}}
+\def\lectio{\textrm{{lect.\ }}}   
+\def\lec{\textrm{{lect.\ }}}
+\def\leginequit{\textrm{{l.n. }}} 
+\def\legn{\textrm{{l.n. }}}
+\def\illeg{\textrm{{l.n. }}}
+
+\def\primman{\textrm{{pr.m.}}}
+\def\prob{\textrm{{prob.}}}
+\def\rep{\textrm{{repetitio }}}
+\def\secundamanu{\textrm{\scriptsize{s.m.}}}            \def\secm{{\kern-.6pt\lower-.91ex\hbox{\textrm{\tiny{\emph{s.m.}}}\kern0pt}}}%   \textrm{\scriptsize{s.m.}}}
+\def\sequentia{\textrm{{seq.\,inv.\ }}}  
+\def\seqinv{\textrm{{seq.\,inv.\ }}}
+\def\order{\textrm{{seq.\,inv.\ }}}
+\def\supralineam{{\kern-.7pt\lower-.91ex\hbox{\textrm{\tiny{\emph{s.l.}}}\kern0pt}}} %\textrm{\scriptsize{s.l.}}}
+\def\interlineam{{\kern-.7pt\lower-.91ex\hbox{\textrm{\tiny{\emph{s.l.}}}\kern0pt}}}   %\textrm{\scriptsize{s.l.}}}
+\def\vl{\textrm{v.l.}}   \def\varlec{\textrm{v.l.}} \def\varialectio{\textrm{v.l.}}
+\def\vide{\textrm{{cf.\ }}}
+\def\cf{\textrm{{cf.\ }}} 
+\def\videtur{\textrm{{vid.\,ut}}}
+\def\crux{\textup{[\ldots]} }
+\def\cruxx{\textup{[\ldots]}}
+\def\unm{\textit{unm.}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% List of Scholars
+\DeclareScholar{ego}{ego}[
+forename=Nils Jacob,
+surname=Liersch]
+
+% Persons:14\DeclareScholar{ego}{ego}[15forename=Robert,16surname=Alessi]17% Useful shorthands:18\DeclareShorthand{codd}{codd.}{V,I,R,H}19\DeclareShorthand{edd}{edd.}{Lit,Erm,Sm}20\DeclareShorthand{egoscr}{\emph{scripsi}}{ego}
+
+%Useful shorthands:
+%\DeclareShorthand{codd}{codd.}{V,I,R,H}
+%\DeclareShorthand{edd}{edd.}{Lit,Erm,Sm}
+\DeclareShorthand{egoscr}{em.}{ego}
+\DeclareShorthand{egoscrconj}{conj.}{ego}
+\DeclareShorthand{egomute}{\unskip}{ego}
+
+\usepackage{xparse}
+
+\NewDocumentEnvironment{tlg}{O{}O{}}{\setlength{\leftskip}{0pt}\vspace{-1ex}\begin{quotation}}{\hfill #1\ \vspace{-1ex}\end{quotation}\vspace{-1ex}} %verse environment
+%\NewDocumentEnvironment{tlg}{O{}O{}}{\begin{verse}}{॥#1\hskip-4pt ॥\\ \end{verse}}
+\NewDocumentCommand{\tl}{m}{{\selectlanguage{iast} #1}}
+
+\NewDocumentCommand{\extra}{m}{{\textcolor{MidnightBlue}{#1}}} %command for additions to U2
+\NewDocumentCommand{\crazy}{m}{{\textcolor{red}{#1}}} %totally corrupted passage
+\NewDocumentCommand{\coro}{m}{{\textcolor{violet}{#1}}} %colour for sentence counter! 
+
+\NewDocumentEnvironment{prose}{O{}}{\begin{otherlanguage}{iast}}{\end{otherlanguage}}
+% \NewDocumentEnvironment{padd}{O{}}{\begin{otherlanguage}{iast}}{\end{otherlanguage}}
+\NewDocumentEnvironment{tlate}{O{}}
+%\NewDocumentEnvironment{tadd}{O{}}
+
+%Define two commands: \skp ("sanskrit plus"), to be ignored by TeX in
+%the edition text, but processed in the TEI output. Conversely, \skm
+%("sanskrit minus") is to be processed in the edition text, but
+%ignored if found in the apparatus criticus and in the TEI output:
+
+\NewDocumentCommand{\skp}{m}{}
+\TeXtoTEIPat{\skp {#1}}{#1}
+
+%\NewDocumentCommand{\skpp}{m}{}
+%\TeXtoTEIPat{\skpp {#1}}{#1}
+
+\NewDocumentCommand{\skm}{m}{\unless\ifinapparatus#1-\fi}
+\TeXtoTEIPat{\skm {#1}}{}
+
+\NewDocumentCommand{\dd}{}{/\hskip-4pt/}
+\TeXtoTEIPat{\dd {}}{//}
+
+
+%%% modify environments and commands
+%%% TEI mapping
+\TeXtoTEIPat{\begin {tlg}}{<lg>} %lg=(Group of verse (s)) contains one or more verses or lines of verse that together form a formal unit (e.g. stanza, chorus).
+\TeXtoTEIPat{\end {tlg}}{</lg>}
+
+\TeXtoTEIPat{\begin {prose}}{<p>}
+\TeXtoTEIPat{\end {prose}}{</p>}
+
+\TeXtoTEIPat{\begin {tlate}}{<p>}
+\TeXtoTEIPat{\end {tlate}}{</p>}
+
+\TeXtoTEIPat{\\}{}
+\TeXtoTEIPat{\linebreak}{<br/>}
+\TeXtoTEIPat{\noindent}{}
+%\TeXtoTEI{tl}{l}
+\TeXtoTEI{emph}{hi}
+\TeXtoTEI{bigskip}{}
+\TeXtoTEI{None}{N1}
+\TeXtoTEI{Ntwo}{N2}
+\TeXtoTEI{Done}{D1}
+\TeXtoTEI{Dtwo}{D2}
+\TeXtoTEI{Uone}{U1}
+\TeXtoTEI{Utwo}{U2}
+%\TeXtoTEIPat{/}{ |}
+%\TeXtoTEI{//}{ ||}
+\TeXtoTEIPat{\korr}{em. }
+\TeXtoTEIPat{\conj}{conj.}
+\TeXtoTEIPat{\om}{om.}
+\TeXtoTEIPat{english}{}
+\TeXtoTEIPat{\hskip}{}
+\TeXtoTEIPat{\hskip-4pt}{}
+\TeXtoTEIPat{\hskip-2pt}{}
+\TeXtoTEIPat{-}{ }
+\TeXtoTEIPat{4pt}{}
+\TeXtoTEIPat{2pt}{}
+\TeXtoTEIPat{\textcolor {#1}{#2}}{<hi rend="#1">#2</hi>} 
+
+% Nullify \selectlanguage in TEI as it has been used in
+% \DeclareWitness but should be ignored in TEI.
+\TeXtoTEI{selectlanguage}{}

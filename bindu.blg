@@ -1,0 +1,19 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'bindu.blg'
+[105] biber:340> INFO - === Fr Mai  5, 2023, 17:48:11
+[125] Biber.pm:418> INFO - Reading 'bindu.bcf'
+[235] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[257] Biber.pm:4401> INFO - Processing section 0
+[272] Biber.pm:4592> INFO - Looking for bibtex file 'bindu.bib' for section 0
+[280] bibtex.pm:1713> INFO - LaTeX decoding ...
+[511] bibtex.pm:1518> INFO - Found BibTeX data source 'bindu.bib'
+[579] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[579] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[579] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[579] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[581] bbl.pm:654> INFO - Writing 'bindu.bbl' with encoding 'UTF-8'
+[582] bbl.pm:757> INFO - Output to bindu.bbl
+[582] Biber.pm:130> WARN - Duplicate entry key: 'yuktabhavadeva' in file 'bindu.bib', skipping ...
+[583] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_rYAq/a411a05437c082f0cf4f7e71b7c360c2_26358.utf8, line 1417, warning: 121 characters of junk seen at toplevel
+[583] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_rYAq/a411a05437c082f0cf4f7e71b7c360c2_26358.utf8, line 1629, warning: 58 characters of junk seen at toplevel
+[583] Biber.pm:132> INFO - WARNINGS: 3

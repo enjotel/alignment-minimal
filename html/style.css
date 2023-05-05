@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.edition {
+  float: left;
+  width: 40%;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #ddd;
+}
+
+.edition h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.translation {
+  float: right;
+  width: 40%;
+  margin: 0 0 20px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #ddd;
+}
+
+.translation h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footnotes, .philological-commentary, .sources, .testimonia {
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #ddd;
+}
+
+.footnotes h3, .philological-commentary h3, .sources h3, .testimonia h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+

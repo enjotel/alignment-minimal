@@ -1,0 +1,461 @@
+\input{preamble.tex}
+\author{Nils Jacob Liersch}
+\title{Minimalbeispiel Alignment}
+\date{\today}
+
+\parindent=15pt
+\begin{document}
+
+% Zitiermöglichkeiten:
+%\footcite[See][p.\,1]{goldstein01:_tibet_englis_diction_moder_tibet}
+%\footnote{\cite{goldstein01:_tibet_englis_diction_moder_tibet}.}
+
+\frontmatter
+\thispagestyle{empty}
+\begin{center}
+  {\Large \emph{The Yogatattvabindu}}\\[3mm]
+\end{center}
+
+
+
+\newpage
+
+\
+
+\thispagestyle{empty}
+
+
+
+\normalsize
+
+
+\newpage
+
+
+\begin{center}
+\thispagestyle{empty}
+
+\
+
+\vskip 2mm
+
+\begin{otherlanguage}{iast}
+\LARGE \sanskritfont{Yogatattvabindu}
+\end{otherlanguage}
+
+\vskip .4cm
+
+\Huge Yogatattvabindu \\[7mm]
+\Large Critical and Synoptic \\
+Edition with annotated Translation
+
+
+\large
+
+\vspace{3cm}
+
+Von
+
+Nils Jacob Liersch
+\small
+\vfill
+
+\vfill
+
+Indica et Tibetica Verlag \\ % $\cdot$ 
+Marburg 2024
+
+\vskip 6mm
+
+\end{center}
+
+\newpage
+\newpage \ \thispagestyle{empty}
+\small  \
+
+\noindent
+
+\
+\vfill
+
+
+\small
+\noindent \textbf{Bibliographische Information Der Deutschen Bibliothek}
+
+\noindent
+Die Deutsche Bibliothek verzeichnet diese Publikation in der Deutschen Nationalbibliographie;
+detaillierte bibliographische Informationen sind im Internet über http://dnb.ddb.de abrufbar.
+
+\noindent
+\textbf{Bibliographic information published by Die Deutschen Bibliothek}
+
+\noindent
+Die Deutsche Bibliothek lists this publication in the Deutsche Nationalbibliographie; detailed
+bibliographic data is available in the Internet at http://dnb.ddb.de.  
+
+
+\vskip 1cm
+
+\noindent
+\copyright\ Indica et Tibetica Verlag, Marburg 2024
+
+\medskip
+
+\noindent
+Alle Rechte vorbehalten / All rights reserved
+
+\medskip
+
+\noindent
+Ohne ausdrückliche Genehmigung des Verlages ist es nicht gestattet, das Werk oder einzelne Teile
+daraus nachzudrucken, zu vervielfältigen oder auf Datenträger zu speichern.
+
+\smallskip
+
+\noindent
+Apart from any fair dealing for the purpose of private study, research, criticism or review, no
+part of this book may be reproduced or translated in any form, by print, photo form, microfilm, or
+any other means without written permission. Enquiries should be made to the publishers.
+
+\bigskip
+
+\noindent
+Satz: \ \ Nils Jacob Liersch \\
+Herstellung: \ \ BoD – Books on Demand GmbH, Norderstedt  \\
+
+\bigskip
+
+\noindent
+%\ISBN     
+
+\normalsize
+
+\newpage
+
+%\maketitle
+\clearpage
+\tableofcontents
+\addtocounter{page}{-1}
+\thispagestyle{empty}
+\clearpage
+
+\chapter{Introduction}
+\mainmatter
+
+\chapter{Critical Edition \& Annotated Translation}
+\cleardoublepage
+\begin{alignment}[
+  texts=edition[class="edition"];
+  translation[class="translation"],
+  ]
+  \begin{edition}
+    \ekddiv{type=ed}
+    \begin{prose}
+      \noindent
+\note[type=source, labelb=178a, lem={\textbf{Re}}]{PT\textsuperscript{qcr \cdot YSV} (Ed. pp. 838-839): netramadhye kūrmanāmā nimeṣonmeṣakṛdayam | udgāre nāga ākhyātaḥ ūrddhavāyuḥ pracālane | kṛkaraḥ kṣutkaro jñeyo devadatto vijṛmbhaṇe | dhanañcayaḥ saccidākāro mṛtadehaṃ na muñcati | yady api sargakāṇḍe sarvametaduktaṃ tathāpi kāryakāraṇabhāvajñāpanāya punarnirdiṣṭamiti na punaruktam |}
+\note[type=source, labelb=179a, lem={\textbf{Ri}}]{SSP 1.67 (Ed. pp. 23-24): kūrmavāyuḥ cakṣuṣor unmeṣakārakaś ca| kṛkalaḥ udgārakaḥ kṣutkārakaś ca | devadatto mukhavijṛmbhakaḥ | dhanañjayo nādaghoṣakah ||1.67|| iti daśavāyvavalokanena piṇḍotpattiḥ naranārīrūpam |}
+%-----------------------------
+%kūrmavāyur netramadhye tiṣṭhati/ nimeṣonmeṣaṃ karoti/ \E
+%kūrmavāyur netramadhye           nimeṣonmeṣaṃ karoti \P
+%kūrmavāyoḥ netramadhye           nimeṣonmeṣaṃ karotī/ \B
+%kūrmavāyoḥ netramadhye           nimiṣonmeṣaṃ karotī... \L
+%kūrmo vāyunetramadhye tiṣṭhati/  unmeṣaṃ nimeṣaṃ karoti/ \N1
+%kūrmo vāyunetramadhye tiṣṭhati/  unmeṣaṃ nimeṣaṃ ca karoti// \D
+%kūrmo vāyunetramadhye tiṣṭhati/  unmeṣaṃ nimeṣaṃ karoti/ \N2
+%\om                                                     \U1
+%kūrmavāyur netramadhye           nimiṣonmeṣaṃ karoti//            \U2
+%-----------------------------
+%The Kūrma vitalwind exists within the eyes. It causes [the] opening and closing [of the eyes]. 
+%-----------------------------
+\app{\lem[wit={E,P,U2}, alt={kūrmavāyur}]{kūrmavāyu\skp{r-ne}}
+  \rdg[wit={B,L}]{kūrmavāyoḥ}
+  \rdg[wit={D,N1,N2}]{kūrmo vāyu}
+}\skm{r-ne}tramadhye
+\app{\lem[wit={D,E,N1,N2}]{tiṣṭhati}
+  \rdg[wit={ceteri}]{\om}}/  
+\app{\lem[wit={E,P,B,U2}]{nimeṣonmeṣaṃ}
+  \rdg[wit={N1,N2}]{unmeṣaṃ nimeṣaṃ}
+  \rdg[wit={D}]{unmeṣaṃ nimeṣaṃ ca}}
+\app{\lem[wit={ceteri}]{karoti}
+  \rdg[wit={B,L}]{karotī}}/
+\note[type=philcomm, labelb=179b, lem={\uproman{27}.\textsuperscript{\lowroman{17}-\lowroman{18}}}]{Sentences \om in \getsiglum{U1}.}
+%-----------------------------
+%kṛkalakartāvāyur  udgāraṃ karoti      \E
+%kṛkalavāyur       udhāraṃ karoti      \P
+%kṛkalavāyur       udhāraṃ karotī      \B
+%kṛkalavāyur       uhāraṃ karotī        \L
+%kṛkalavāyor       ūdgāro bhavati//    \N1
+%kṛkalavāyor-------ūdgāto bhavati/      \D
+%kṛkaravāyor-------ūdgāro bhavati/      \N2
+%                                       \U1
+%puṣkaravāyur      udgāraṃ karoti//    \U2
+%-----------------------------
+%From the Kṛkala vitalwind gagging arises. 
+%-----------------------------
+\app{\lem[wit={D,N1,N2},alt={kṛkalavāyor}]{kṛkalavāyo\skp{r-u}}
+  \rdg[wit={B,L,P}]{kṛkalavāyur}
+  \rdg[wit={E}]{kṛkalakartāvāyur}
+  \rdg[wit={U2}]{puṣkaravāyur}
+}\app{\lem[type=emendation, resp=egoscr, alt={udgāro}]{\skm{r-u}dgāro}
+  \rdg[wit={E,U2}]{udgāraṃ}
+  \rdg[wit={B,P}]{udhāraṃ}
+  \rdg[wit={L}]{uhāraṃ}
+  \rdg[wit={N1,N2}]{ūdgāro}
+  \rdg[wit={D}]{ūdgāto}}
+\app{\lem[wit={D,N1,N2}]{bhavati}
+  \rdg[wit={E,P,U2}]{karoti}
+  \rdg[wit={B,L}]{karotī}}/
+%-----------------------------
+% devadattavāyoḥ  jṛmbhaṇaṃ bhavati/ dhanaṃjayavāyoḥ śabda utpadyate// \E
+% devadattavāyor  jumbhā bhavati     dhanaṃjayavāyo  śabdāḥ utpadyete  \P
+% devadattavāyor  jumbhā bhavaṃtī    dhanaṃjayavāyoḥ śabda utpadyate// \B
+% devadattavāyor  jṛṃbhā bhavatī     dhanaṃjayavāyoḥ śabdaḥ utpadyate// \L
+% devadattavāyor  jṛṃbha utpadyate// dhanaṃjayavāyo  śabda utpadyate// \N1
+% devadattavāyor  jṛṃbha utpadyate// dhanaṃjayavāyo  śabda utpadyate// \D
+% devadattavāyo   jṛṃbhotpadyate/    dhanaṃjayavāyo  śabdotpadyate// \N2
+% devadattavāyor  jaṃbhā utpadyate   dhanaṃjayavāyoḥ sabta utpadyate \U1
+% devadattavāyo   jṛṃbhā bhavati//   dhanaṃjayavāyoḥ śabda utpadyate// \U2
+%-----------------------------
+%From the Devadatta vitalwind jawning arises. From the Dhanaṃjaya vitalwind speech arises. 
+%-----------------------------
+\app{\lem[wit={ceteri}, alt={devadattavāyor}]{devadattavāyo\skp{r-jṛ}}
+  \rdg[wit={E}]{devadattavāyoḥ}
+  \rdg[wit={N2,U2}]{devadattavāyo}
+}\app{\lem[wit={D,N1,U2},alt={jṛmbha}]{\skm{r-jṛ}mbha}
+  \rdg[wit={E}]{jṛmbhaṇaṃ}
+  \rdg[wit={B,P}]{jumbhā}
+  \rdg[wit={L}]{jṛṃbhā}
+  \rdg[wit={N2}]{jṛṃbho°}
+  \rdg[wit={U1}]{jaṃbhā}}
+\app{\lem[wit={X}]{utpadyate}
+  \rdg[wit={E,P,U2}]{bhavati}
+  \rdg[wit={B}]{bhavaṃtī}
+  \rdg[wit={L}]{bhavatī}}/
+\app{\lem[wit={Y}]{dhanaṃjayavāyoḥ}
+  \rdg[wit={X}]{dhanaṃjayavāyo}}
+\app{\lem[wit={ceteri}]{śabda}
+  \rdg[wit={P}]{śabdāḥ}
+  \rdg[wit={L}]{śabdaḥ}
+  \rdg[wit={N2}]{śabdo°}
+  \rdg[wit={U1}]{sabta}}
+utpadyate\dd{}\textsuperscript{\begin{otherlanguage}{english}\coro{[\lowroman{20}]}\end{otherlanguage}}\vfill
+\end{prose}
+\nolinenumbers
+\centerline{\textrm{\small{[\uproman{27}.\textsuperscript{\coro{\lowroman{1}-\lowroman{5}}}Madhyalakṣya]}}}
+\label{madhyalaksya}
+    \bigskip
+    \linenumbers
+    \begin{prose}
+      \noindent
+%----------------------------
+%\om                               \E
+%idānī  madhyalakṣaṃ   kathyate      \P
+%idānīṃ madhyalakṣaṇaṃ kathyate//  \B DSCN7164 Z.1
+%idānīṃ madhye lakṣaṃ  kathyate//   \L
+%idānīṃ madhyalakṣyaṃ  kathyate//   \N1
+%idānīṃ madhyalakṣyaṃ  kathyate//   \D
+%idānīṃ madhyalakṣaṇaṃ kathyate//  \N2
+%idānīṃ madhyalakṣyaṃ  kathyate     \U1
+%idānīṃ madhye lakṣyaṃ kathyate//  \U2
+%-----------------------------
+%Now the central fixation is taught. 
+%-----------------------------
+\note[type=source, labelb=180, lem={\textbf{Re}}]{PT\textsuperscript{qcr \cdot YSV} (Ed. p. 839): idānīṃ madhyalakṣan tu kathyate siddhikārakam | śvetaṃ raktaṃ tathā pītaṃ dhūmrākāran tu nīlabham |}
+\app{\lem[wit={ceteri}]{idānīṃ}
+  \rdg[wit={P}]{idānī}}
+\app{\lem[wit={D,N1,U1}]{madhyalakṣyaṃ}
+  \rdg[wit={B,N2}]{madhyalakṣaṇaṃ}
+  \rdg[wit={P}]{madhyalakṣaṃ}
+  \rdg[wit={L}]{madhye lakṣaṃ}
+  \rdg[wit={U2}]{madhye lakṣyaṃ}}
+kathyate/\note[type=philcomm, labelb=180a, lem={\uproman{27}\textsuperscript{\lowroman{1}}}]{Introductory sentence is missing in \getsiglum{E}.}
+%-----------------------------SSP. S41!!! almost identical! 
+%              aṃtha ca pītavarṇaṃ   raktavarṇaṃ vā dhūmrākāraṃ yan  nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇḍalasadṛśaṃ     arddhacandrasadṛśaṃ jvalad  ākāśasamākāraṃ  \E
+%śvetavarṇaṃ   atha     pītavarṇaṃ   raktaṃ vā      dhūmrākāraṃ yan  nīlavarṇaṃ vā   'gniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalasadṛśaṃ     arddhacaṃdrasadṛśaṃ jvalad  ākāśasamākāraṃ  \P
+%śvetavaraṃ    atha     pītavarṇaṃ// rakta  vā      dhūmrākāraṃ yan  nīlavarṇaṃ vā// agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalasadṛśaṃ/    ūrdhvacaṃdrasadṛśaṃ jvalad  ākāśasamākāraṃ// \B
+%śvetavarṇaṃ   atha     pītavarṇaṃ   raktaṃ vā      dhūmrākāraṃ yan  nīlavarṇaṃ vā// agniśikhāsadṛśaṃ vidyutsamāne    sūryamaṇdalasadṛśaṃ//   ardhacaṃdrasadṛśaṃ  jvalad  ākāśasamākāra   \L
+%śvetavarṇā/   atha vā  pītavarṇaṃ   raktaṃ vā      dhūmāra     va   nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalaṃ sadṛśaṃ/  ūrdhvacaṃdrasadṛśaṃ jvalad  ākāśasamānakāraṃ//  \N1
+%śvetavarṇaṃ// atha vā  pītavarṇaṃ   raktaṃ vā      dhūmākāro   vā   nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ// sūryamaṇdalaṃ sadṛśaṃ// ūrdhvacaṃdrasadṛśaṃ jvalad  ākāśasamānakāraṃ//  \D
+%śvetavarṇā    atha vā  pītavarṇa    raktavarṇa     dhūmravarṇa      nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalasadṛśaṃ     ūrdhvacaṃdrasadṛśaṃ jvalad  ākāśasamānakāraṃ//  \N2
+%svetavarṇaṃ   atha vā  pītavarṇaṃ   raktaṃ vā      dhūmrākāra  van  nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalasadṛśaṃ     ārdhacaṃdrasadṛśaṃ  jalad---ā----samānākāraṃ \U1
+%svatavarṇaṃ   atha vā  pītavarṇaṃ// raktaṃ vā      dhūmrākāraṃ yan  nīlavarṇaṃ vā   agniśikhāsadṛśaṃ vidyutsamānaṃ   sūryamaṇdalasadṛśaṃ     arddhacaṃdrasadṛśaṃ jvalad--ākāraṃ samākāraṃ \U2
+%-----------------------------
+%White-colored, or also yellow-colored or red-coloured or smoke-coloured or blue-coloured, like the flame of fire, equal to a lightning, like the orb of the sun, like a half-moon, appearing like flaming space, ...  
+%-----------------------------
+\note[type=source, labelb=181, lem={\textbf{Re}}]{PT\textsuperscript{qcr \cdot YSV} (Ed. p. 839): agnijvālāsamānābhā vidyutpuñjasamaprabhā | ādityamaṇḍalākāramathavā candramaṇḍalam |}
+\note[type=source, labelb=181a, lem={\textbf{Ri}}]{SSP 2.29 (Ed. p. 41): śvetavarṇaṃ vā raktavarṇaṃ vā kṛṣṇavarṇaṃ vā agniśikhākāraṃ vā jyotirūpaṃ vā vidyudākāraṃ sūryamaṇḍalākāraṃ vā arddhacandrākāraṃ vā yatheṣṭasvapiṇḍamātraṃ sthānavarjitaṃ manasā lakṣayet ity anekaviddhaṃ madhyamaṃ lakṣyaṃ |}
+\app{\lem[wit={ceteri}, alt={°śveta}]{śveta}
+  \rdg[wit={U1}]{sveta°}
+  \rdg[wit={U2}]{svata°}
+  \rdg[wit={E}]{\om}
+}\app{\lem[wit={P,L,U1,U2}, alt={°varṇaṃ}]{varṇaṃ}
+  \rdg[wit={D}]{°varṇaṃ ||}
+  \rdg[wit={P}]{°varaṃ}
+  \rdg[wit={N1}]{°varṇā |}
+  \rdg[wit={E}]{\om}}
+\app{\lem[wit={ceteri}]{atha}
+  \rdg[wit={E}]{aṃtha}}
+\app{\lem[wit={ceteri}]{vā}
+  \rdg[wit={E}]{ca}
+  \rdg[wit={B,L,P}]{\om}}
+pīta\app{\lem[wit={ceteri}, alt={°varṇaṃ}]{varṇaṃ}
+  \rdg[wit={B,U2}]{°varṇaṃ ||}
+  \rdg[wit={N2}]{°varṇa}}
+\app{\lem[wit={E}, alt={raktavarṇaṃ}]{raktavarṇaṃ}
+  \rdg[wit={N2}]{raktavarṇa}
+  \rdg[wit={D,L,N1,U1,U2}]{raktaṃ}
+  \rdg[wit={B}]{\om}}
+\app{\lem[wit={ceteri}]{vā}
+  \rdg[wit={N2}]{\om}}
+\app{\lem[type=emendation, resp=egoscr]{dhūmravarṇaṃ}
+  \rdg[wit={D}]{dhūmākāro}
+  \rdg[wit={N1}]{dhūmāra}
+  \rdg[wit={N2}]{dhūmravarṇa}
+  \rdg[wit={U1}]{dhūmrākāra}
+  \rdg[wit={Y}]{dhūmrākāraṃ}}
+%\note[type=philcomm, labelb=182, lem={dhūmra°}]{Due to the repetitive use of the term \textit{varṇaṃ}, both preceding and succeeding the mention of \textit{dhūmra}, as well as its previous occurrence within the same compound, it is highly probable that the original reading was \textit{dhūmravarṇaṃ}.}
+\app{\lem[wit={D}]{vā}
+  \rdg[wit={N1}]{va}
+  \rdg[wit={U1}]{van}
+  \rdg[wit={Y}]{yan}
+  \rdg[wit={N2}]{\om}}
+nīlavarṇaṃ
+\app{\lem[wit={ceteri}]{vā}
+  \rdg[wit={B,L}]{vā ||}}
+\app{\lem[wit={P}, alt={'gni°}]{'gni}
+  \rdg[wit={ceteri}]{agni°}
+}śikhāsadṛśaṃ vidyut\app{\lem[wit={ceteri},alt={°samānaṃ}]{samānaṃ}
+  \rdg[wit={D}]{°samānaṃ ||}
+  \rdg[wit={L}]{°samāne}}
+sūryamaṇdala\app{\lem[wit={ceteri}, alt={°sadṛśaṃ}]{sadṛśaṃ}
+  \rdg[wit={D,N1}]{°ṃ sadṛśaṃ}}
+\app{\lem[wit={ceteri},alt={ardha°}]{ardha}
+  \rdg[wit={B,D,N1,N2}]{ūrdhva°}
+  \rdg[wit={U1}]{ārdha°}
+}candrasadṛśaṃ
+\app{\lem[wit={ceteri}, alt={jvalad°}]{jvala\skp{d-ā}}
+  \rdg[wit={U1}]{jalad}
+}\app{\lem[wit={ceteri}, alt={°ākāśa°}]{\skm{d-ā}kāśa}
+  \rdg[wit={U1}]{°ā°}
+  \rdg[wit={U2}]{°ākāraṃ}
+}\app{\lem[wit={ceteri}, alt={°samākāraṃ}]{samākāraṃ}
+  \rdg[wit={D,N1,N2,U1}]{°samānakāraṃ}
+  \rdg[wit={U2}]{samakāraṃ}
+  \rdg[wit={L}]{°samākāra}}/
+%-----------------------------
+%svaśarīraparimitaṃ      tejomanomadhye tathyaṃ kartavyam// \E
+%svaśarīraparimitaṃ      tejomanomadhye lakṣyaṃ karttavyaṃ\P
+%svaśarīraparimitaṃ      tejomanomadhye lakṣaṃ kartavyaṃ//  \B
+%svaśarīraparimitaṃ      tejomanomadhye lakṣaṃ kartavyaṃ//  \L
+%svaśarīraparimitaṃ      tejomanomadhye lakṣyaṃ karttavyaṃ//  \N1
+%svaśarīraparimitaṃ      tejomanomadhye lakṣyaṃ karttavyaṃ// \D
+%svaśarīraparimitaṃ      tejomanomadhye lakṣaṇaṃ karttavyaṃ//  \N2
+%svaśarīraparimanomittaṃ tejomadhye     lakṣyaṃ karttavyaṃ  \U1
+%svaśarīraparimitaṃ      tejomanomadhye lakṣaṃ kartavyaṃ//  \U2
+%-----------------------------
+%measured according to ones own body, the fixation shall be directed onto the center of the glowing mind.  
+%-----------------------------
+\note[type=source, labelb=183, lem={\textbf{Re}}]{PT\textsuperscript{qcr \cdot YSV} (Ed. p. 839): jvaladākāśatulyaṃvā bhāvayed rūpamātmanaḥ | etaj jyotirmayaṃ dehaṃ manomadhye tu lakṣayet |}
+svaśarīrapari\app{\lem[wit={ceteri},alt={°mitaṃ}]{mitaṃ}
+  \rdg[wit={U1}]{°manomittaṃ}}
+tejo\app{\lem[wit={ceteri},alt={°mano}]{mano}
+  \rdg[wit={U1}]{\om}
+}madhye
+\app{\lem[wit={D,P,N1,U1}]{lakṣyaṃ}
+  \rdg[wit={E}]{tathyaṃ}
+  \rdg[wit={B,L,U2}]{lakṣaṃ}
+  \rdg[wit={N2}]{lakṣaṇaṃ}}
+kartavyaṃ/
+%-----------------------------
+%ekasmin lakṣye    kṛte sati manomadhye sthitasya malasya dāho bhavati/ \E [p.38]%
+%etasmil lakṣye    kṛte sati manomadhye sthitasya         dāho bhavati \P
+%etasmin lakṣe     kṛte satī manomadhye sthitasya malasya dāho bhavati \B
+%etasmil lakṣe     kṛte satī manomadhye sthitasya malasya dāho bhavati... \L
+%ekasmin lakṣye    kṛte sati manomadhye sthitasya malasya dāho bhavati/ \N1
+%ekasmin lakṣye    kṛte sati manomadhye sthitasya malasya dāho bhavati// \D
+%ekasmin lakṣaṇo   kṛte sati manomadhye sthitasya malasya dāho bhavati/ \N2
+%etasmin na lakṣye kṛte satī manomadhye sthitasya malasya dāho bhavati \U1 %%%281.jpg
+%etasmil lakṣe     kṛte satī manomadhye sthitasya malasya dāho bhavati// \U2
+%-----------------------------
+%While abiding in this fixation the burning of the impurity in the center of the mind arises. 
+%-----------------------------
+\note[type=source, labelb=184, lem={\textbf{Re}}]{PT\textsuperscript{qcr \cdot YSV} (Ed. p. 839): eteṣāñ ca kṛte lakṣe nānāduḥkhaṃ praṇaśyati | manas astu malo yāti mahānando bhavet tataḥ |}
+\app{\lem[wit={P,L,U2},alt={etasmil}]{etasmi\skp{ll-a}}
+  \rdg[wit={U1}]{etasmin}
+  \rdg[wit={ceteri}]{ekasmin}
+}\app{\lem[wit={ceteri},alt={lakṣye}]{\skm{ll-a}kṣye}
+  \rdg[wit={B,L,U2}]{lakṣe}
+  \rdg[wit={U1}]{na lakṣye}
+  \rdg[wit={N2}]{lakṣaṇo}}
+kṛte
+\app{\lem[wit={ceteri}]{sati}
+  \rdg[wit={B,L,U1,U2}]{satī}}
+manomadhye sthitasya
+\app{\lem[wit={ceteri}]{malasya}
+  \rdg[wit={P}]{\om}}
+dāho bhavati/ 
+%-----------------------------
+%manasaḥ   sattvaguṇaprakāśo   bhavati/     puruṣa ānandamayo bhūtvā tiṣṭhati//   \E 
+%manasaḥ   sattvaguṇaḥ prakaṭo bhavati      puruṣa ānandamayo bhūtvā tiṣṭhati    \P   %%%7650.jpg
+%manasaḥ// sattvaguṇo  prakaṭo  bhavati//   puruṣa ānandamayo bhūtvā tiṣṭhati// \B
+%manasaḥ// sattvaguṇaḥ prakaṭo bhavati      puruṣa ānandamayo bhūtvā tiṣṭhati//  \L
+%manasaḥ   sattvaguṇe  prakaṭo  bhavati/    puruṣa ānandamayo bhūtvā tiṣṭhati//    \N1
+%manaḥ saḥ sattvaguṇo  prakaṭo  bhavati//   puruṣa ānandamayo bhūtvā tiṣṭhati// \D
+%manasaḥ   sattvaguṇo  prakaṭo  bhavati/    puruṣa ānandamayo bhūtvā tiṣṭhati//    \N2
+%manasaḥ   sattvaguṇo  prakaṭo  bhavati     puruṣa ānandamayo bhūtvā tiṣṭhati       \U1
+%manasaḥ   satvaguṇaprakaśo    bhavati//    puruṣa ānandamayo bhūtvā tiṣṭhati//    \U2 %%414.jpg
+%-----------------------------
+%The Sattva-quality of the mind becomes revealed. After this has happend the person abides supreme bliss. 
+%-----------------------------
+mana\app{\lem[wit={ceteri},alt={°saḥ}]{saḥ}
+  \rdg[wit={B,L}]{°saḥ ||}
+  \rdg[wit={D}]{manaḥ saḥ}}
+sattva\app{\lem[wit={B,D,N2,U1},alt={°guṇo}]{guṇo}
+  \rdg[wit={N1}]{°guṇe}
+  \rdg[wit={E,U2}]{°guṇa°}
+  \rdg[wit={P,L}]{°guṇaḥ}}
+\app{\lem[wit={ceteri}]{prakaṭo}
+  \rdg[wit={E,U2}]{°prakāśo}}
+bhavati/ puruṣa ānandamayo bhūtvā tiṣṭhati\dd{}\textsuperscript{\begin{otherlanguage}{english}\coro{[\lowroman{5}]}\end{otherlanguage}}\vfill
+\end{prose}
+  \end{edition}
+  \begin{translation}
+    \ekddiv{type=trans}
+    \begin{tlate}
+\noindent
+The Kūrma vital wind exists within the eyes. It causes [the] opening and closing [of the eyes]. From the Kṛkala vital wind gagging arises. From the Devadatta vital wind jawning arises. From the Dhanaṃjaya vital wind speech arises.\textsuperscript{\coro{[\lowroman{20}]}}
+\end{tlate}
+  \ekddiv{type=trans}
+  \bigskip
+\centerline{\textrm{\small{[\uproman{26}.\textsuperscript{\coro{\lowroman{1}-\lowroman{5}}}Madhyalakṣya]}}}
+\bigskip
+\begin{tlate}
+Now the central fixation is taught. White-coloured or also yellow-coloured or red-coloured or smoke-coloured or blue-coloured, like the flame of fire, equal to a lightning, like the orb of the sun, like a half-moon, appearing like flaming space, measured according to one's own body, the fixation shall be directed onto the centre of the glowing mind.\footnote{\textit{Śivayogapradīpikā} 4.47cd-48: \begin{quote} śṛṇuṣva madhyalakṣyaṃ ca kathitaṃ pūrvasūribhiḥ || 4.47 \\
+ śvetādivarṇanavakhaṇḍasucandrasūryasaudāminīvahniśikhena bimbāt | \\
+ jvalan nabho vā sthalahīnam ekaṃ vilakṣayet tat khalu madhyalakṣyam 4.48 ||
+ \end{quote}
+``(47cd) Hear now the central target taught by the ancient sages. \\
+(48) Through the image consisting of rays of fire, lightning, sun, moon, and nine [different] colors such as white, etc., one should fixate on the luminous ether or on that which is locationless. Verily, this is the central goal.''
+}
+While abiding in the fixation, the burning of the impurity in the centre of the mind arises. The Sattva quality of the mind becomes revealed.\footnote{The generation of the sattvic quality through the practice of \textit{madhyalakṣ(y)a} also appears in \citetitle{sarvangayoga} 3.28: \begin{quote}madhya lakṣa mana madhya bicārai | vapu pramāna koi rūpa nihārai |\\
+yāte sātvik upajai āī | madhya lakṣa jo sādhai bhāī || 28 ||\end{quote} ``The central Lakṣa directs the mind to reside at its center, revealing the true form of the body. It produces a sattvic quality in those who practice it.'' (28)} After this has happened, the person abides in supreme bliss.   
+\end{tlate}
+  \end{translation}
+\end{alignment}
+\chapter{Bibliography}
+ \label{sec:bibli}
+   \clearpage
+\newpage 
+\thispagestyle{empty}
+\quad  \addtocounter{page}{-1}
+
+\printbibliography[heading=subbibintoc, title=Consulted Manuskripts, keyword=codex]
+
+\printbibliography[heading=subbibintoc, title=Printed Editions, keyword=printsource]
+
+\printbibliography[heading=subbibintoc, title=Secondary Literature, keyword=seclit]
+
+\printbibliography[heading=subbibintoc, title=Online Sources, keyword=onlinesource]
+
+\end{document}
+

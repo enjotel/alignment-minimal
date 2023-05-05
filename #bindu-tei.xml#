@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+  <title>
+    <!-- Title -->
+  </title>
+<respStmt>
+  <resp>
+    <!-- Edited by -->
+  </resp>
+  <name>
+    <!-- Name -->
+  </name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+  <distributor>
+    <!-- Distributor name  -->
+  </distributor>
+</publicationStmt>
+<sourceDesc>
+<listWit>
+<witness xml:id="ceteri">
+  <abbr type="siglum">cett.
+  </abbr>
+ceteri
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="E">
+  <abbr type="siglum">E
+  </abbr>
+Printed Edition
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="P">
+  <abbr type="siglum">P
+  </abbr>
+Pune BORI 664
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="B">
+  <abbr type="siglum">B
+  </abbr>
+Bodleian 485
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="N1">
+  <abbr type="siglum">N
+    <hi rend="sub">1
+    </hi>
+  </abbr>
+NGMPP 38/31
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="N2">
+  <abbr type="siglum">N
+    <hi rend="sub">2
+    </hi>
+  </abbr>
+NGMPP B 38/35
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="L">
+  <abbr type="siglum">L
+  </abbr>
+LALCHAND 5876
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="D">
+  <abbr type="siglum">D
+  </abbr>
+IGNCA 30019
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="U1">
+  <abbr type="siglum">U
+    <hi rend="sub">1
+    </hi>
+  </abbr>
+SORI 1574
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="U2">
+  <abbr type="siglum">U
+    <hi rend="sub">2
+    </hi>
+  </abbr>
+SORI 6082
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="X">
+  <abbr type="siglum">\alpha
+  </abbr>
+Alpha Group: D,N1,N2,U1
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="Y">
+  <abbr type="siglum">\beta
+  </abbr>
+Beta Group: B,E,L,P,U2
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+<witness xml:id="Ysv">
+  <abbr type="siglum">Ysv
+  </abbr>
+Yogasvarodaya
+<msDesc>
+<msIdentifier/>
+</msDesc>
+</witness>
+</listWit>
+<listPerson xml:id="scholars">
+<person xml:id="ego">
+<persName>
+  <abbr type="siglum">ego
+  </abbr>
+  <forename>Nils Jacob
+  </forename>
+  <surname>Liersch
+  </surname>
+</persName>
+</person>
+</listPerson>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<variantEncoding method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+</teiHeader>
+<text>
+<body>
+  <div xml:id="div edition_1" class="edition">
+    <div type="ed">
+      <head/>
+      <p>
+	<note type="source" target="#right(178a)">PT
+	  <hi rend="sup">qcr \cdot YSV
+	  </hi> (Ed. pp. 838 839): netramadhye kūrmanāmā nimeṣonmeṣakṛdayam | udgāre nāga ākhyātaḥ ūrddhavāyuḥ pracālane | kṛkaraḥ kṣutkaro jñeyo devadatto vijṛmbhaṇe | dhanañcayaḥ saccidākāro mṛtadehaṃ na muñcati | yady api sargakāṇḍe sarvametaduktaṃ tathāpi kāryakāraṇabhāvajñāpanāya punarnirdiṣṭamiti na punaruktam |
+	</note>
+	<anchor xml:id="178a"/>
+	<note type="source" target="#right(179a)">SSP 1.67 (Ed. pp. 23 24): kūrmavāyuḥ cakṣuṣor unmeṣakārakaś ca| kṛkalaḥ udgārakaḥ kṣutkārakaś ca | devadatto mukhavijṛmbhakaḥ | dhanañjayo nādaghoṣakah ||1.67|| iti daśavāyvavalokanena piṇḍotpattiḥ naranārīrūpam |
+	</note>
+	<anchor xml:id="179a"/>
+	<app>
+	  <lem wit="#E #P #U2">kūrmavāyur ne
+	  </lem>
+	  <rdg wit="#B #L">kūrmavāyoḥ
+	  </rdg>
+	  <rdg wit="#D #N1 #N2">kūrmo vāyu
+	  </rdg>
+	</app>tramadhye
+	<app>
+	  <lem wit="#D #E #N1 #N2">tiṣṭhati
+	  </lem>
+	  <rdg wit="#ceteri">om.
+	  </rdg>
+	</app>/
+	<app>
+	  <lem wit="#E #P #B #U2">nimeṣonmeṣaṃ
+	  </lem>
+	  <rdg wit="#N1 #N2">unmeṣaṃ nimeṣaṃ
+	  </rdg>
+	  <rdg wit="#D">unmeṣaṃ nimeṣaṃ ca
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">karoti
+	  </lem>
+	  <rdg wit="#B #L">karotī
+	  </rdg>
+	</app>/
+	<note type="philcomm" target="#right(179b)">Sentences om.in
+	  <ref target="#U1">
+	    <selectlanguage/>U
+	    <textsubscript>1
+	    </textsubscript>
+	  </ref>.
+	</note>
+	<anchor xml:id="179b"/>
+	<app>
+	  <lem wit="#D #N1 #N2">kṛkalavāyor u
+	  </lem>
+	  <rdg wit="#B #L #P">kṛkalavāyur
+	  </rdg>
+	  <rdg wit="#E">kṛkalakartāvāyur
+	  </rdg>
+	  <rdg wit="#U2">puṣkaravāyur
+	  </rdg>
+	</app>
+	<app>
+	  <lem resp="#ego" type="emendation">dgāro
+	  </lem>
+	  <rdg wit="#E #U2">udgāraṃ
+	  </rdg>
+	  <rdg wit="#B #P">udhāraṃ
+	  </rdg>
+	  <rdg wit="#L">uhāraṃ
+	  </rdg>
+	  <rdg wit="#N1 #N2">ūdgāro
+	  </rdg>
+	  <rdg wit="#D">ūdgāto
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#D #N1 #N2">bhavati
+	  </lem>
+	  <rdg wit="#E #P #U2">karoti
+	  </rdg>
+	  <rdg wit="#B #L">karotī
+	  </rdg>
+	</app>/
+	<app>
+	  <lem wit="#ceteri">devadattavāyor jṛ
+	  </lem>
+	  <rdg wit="#E">devadattavāyoḥ
+	  </rdg>
+	  <rdg wit="#N2 #U2">devadattavāyo
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#D #N1 #U2">mbha
+	  </lem>
+	  <rdg wit="#E">jṛmbhaṇaṃ
+	  </rdg>
+	  <rdg wit="#B #P">jumbhā
+	  </rdg>
+	  <rdg wit="#L">jṛṃbhā
+	  </rdg>
+	  <rdg wit="#N2">jṛṃbho°
+	  </rdg>
+	  <rdg wit="#U1">jaṃbhā
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#X">utpadyate
+	  </lem>
+	  <rdg wit="#E #P #U2">bhavati
+	  </rdg>
+	  <rdg wit="#B">bhavaṃtī
+	  </rdg>
+	  <rdg wit="#L">bhavatī
+	  </rdg>
+	</app>/
+	<app>
+	  <lem wit="#Y">dhanaṃjayavāyoḥ
+	  </lem>
+	  <rdg wit="#X">dhanaṃjayavāyo
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">śabda
+	  </lem>
+	  <rdg wit="#P">śabdāḥ
+	  </rdg>
+	  <rdg wit="#L">śabdaḥ
+	  </rdg>
+	  <rdg wit="#N2">śabdo°
+	  </rdg>
+	  <rdg wit="#U1">sabta
+	  </rdg>
+	</app> utpadyate//
+	<hi rend="sup">
+	  <otherlanguage>
+	    <coro>[
+	      <lowroman>20
+	      </lowroman>]
+	    </coro>
+	  </otherlanguage>
+	</hi>\vfill
+      </p> \nolinenumbers
+      <centerline>
+	<textrm>
+	  <small>[
+	    <uproman>27
+	    </uproman>.
+	    <hi rend="sup">
+	      <coro>
+		<lowroman>1
+		</lowroman>
+		<lowroman>5
+		</lowroman>
+	      </coro>
+	    </hi>Madhyalakṣya]
+	  </small>
+	</textrm>
+      </centerline>
+      <anchor xml:id="madhyalaksya"/> \linenumbers
+      <p>
+	<note type="source" target="#right(180)">PT
+	  <hi rend="sup">qcr \cdot YSV
+	  </hi> (Ed. p. 839): idānīṃ madhyalakṣan tu kathyate siddhikārakam | śvetaṃ raktaṃ tathā pītaṃ dhūmrākāran tu nīlabham |
+	</note>
+	<anchor xml:id="180"/>
+	<app>
+	  <lem wit="#ceteri">idānīṃ
+	  </lem>
+	  <rdg wit="#P">idānī
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#D #N1 #U1">madhyalakṣyaṃ
+	  </lem>
+	  <rdg wit="#B #N2">madhyalakṣaṇaṃ
+	  </rdg>
+	  <rdg wit="#P">madhyalakṣaṃ
+	  </rdg>
+	  <rdg wit="#L">madhye lakṣaṃ
+	  </rdg>
+	  <rdg wit="#U2">madhye lakṣyaṃ
+	  </rdg>
+	</app> kathyate/
+	<note type="philcomm" target="#right(180a)">Introductory sentence is missing in
+	  <ref target="#E">
+	    <selectlanguage/>E
+	  </ref>.
+	</note>
+	<anchor xml:id="180a"/>
+	<note type="source" target="#right(181)">PT
+	  <hi rend="sup">qcr \cdot YSV
+	  </hi> (Ed. p. 839): agnijvālāsamānābhā vidyutpuñjasamaprabhā | ādityamaṇḍalākāramathavā candramaṇḍalam |
+	</note>
+	<anchor xml:id="181"/>
+	<note type="testium" target="#right(181a)">SSP 2.29 (Ed. p. 41): śvetavarṇaṃ vā raktavarṇaṃ vā kṛṣṇavarṇaṃ vā agniśikhākāraṃ vā jyotirūpaṃ vā vidyudākāraṃ sūryamaṇḍalākāraṃ vā arddhacandrākāraṃ vā yatheṣṭasvapiṇḍamātraṃ sthānavarjitaṃ manasā lakṣayet ity anekaviddhaṃ madhyamaṃ lakṣyaṃ |
+	</note>
+	<anchor xml:id="181a"/>
+	<app>
+	  <lem wit="#ceteri">śveta
+	  </lem>
+	  <rdg wit="#U1">sveta°
+	  </rdg>
+	  <rdg wit="#U2">svata°
+	  </rdg>
+	  <rdg wit="#E">om.
+	  </rdg>
+	</app>śveta
+	<app>
+	  <lem wit="#P #L #U1 #U2">varṇaṃ
+	  </lem>
+	  <rdg wit="#D">°varṇaṃ ||
+	  </rdg>
+	  <rdg wit="#P">°varaṃ
+	  </rdg>
+	  <rdg wit="#N1">°varṇā |
+	  </rdg>
+	  <rdg wit="#E">om.
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">atha
+	  </lem>
+	  <rdg wit="#E">aṃtha
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">vā
+	  </lem>
+	  <rdg wit="#E">ca
+	  </rdg>
+	  <rdg wit="#B #L #P">om.
+	  </rdg>
+	</app> pīta
+	<app>
+	  <lem wit="#ceteri">varṇaṃ
+	  </lem>
+	  <rdg wit="#B #U2">°varṇaṃ ||
+	  </rdg>
+	  <rdg wit="#N2">°varṇa
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#E">raktavarṇaṃ
+	  </lem>
+	  <rdg wit="#N2">raktavarṇa
+	  </rdg>
+	  <rdg wit="#D #L #N1 #U1 #U2">raktaṃ
+	  </rdg>
+	  <rdg wit="#B">om.
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">vā
+	  </lem>
+	  <rdg wit="#N2">om.
+	  </rdg>
+	</app>
+	<app>
+	  <lem resp="#ego" type="emendation">dhūmravarṇaṃ
+	  </lem>
+	  <rdg wit="#D">dhūmākāro
+	  </rdg>
+	  <rdg wit="#N1">dhūmāra
+	  </rdg>
+	  <rdg wit="#N2">dhūmravarṇa
+	  </rdg>
+	  <rdg wit="#U1">dhūmrākāra
+	  </rdg>
+	  <rdg wit="#Y">dhūmrākāraṃ
+	  </rdg>
+	</app>
+	<note type="philcomm" target="#right(182)">Due to the repetitive use of the term
+	  <hi rend="italic">varṇaṃ
+	  </hi>, both preceding and succeeding the mention of
+	  <hi rend="italic">dhūmra
+	  </hi>, as well as its previous occurrence within the same compound, it is highly probable that the original reading was
+	  <hi rend="italic">dhūmravarṇaṃ
+	  </hi>.
+	</note>
+	<anchor xml:id="182"/>
+	<app>
+	  <lem wit="#D">vā
+	  </lem>
+	  <rdg wit="#N1">va
+	  </rdg>
+	  <rdg wit="#U1">van
+	  </rdg>
+	  <rdg wit="#Y">yan
+	  </rdg>
+	  <rdg wit="#N2">om.
+	  </rdg>
+	</app> nīlavarṇaṃ
+	<app>
+	  <lem wit="#ceteri">vā
+	  </lem>
+	  <rdg wit="#B #L">vā ||
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#P">'gni
+	  </lem>
+	  <rdg wit="#ceteri">agni°
+	  </rdg>
+	</app>śikhāsadṛśaṃ vidyut
+	<app>
+	  <lem wit="#ceteri">samānaṃ
+	  </lem>
+	  <rdg wit="#D">°samānaṃ ||
+	  </rdg>
+	  <rdg wit="#L">°samāne
+	  </rdg>
+	</app> sūryamaṇdala
+	<app>
+	  <lem wit="#ceteri">sadṛśaṃ
+	  </lem>
+	  <rdg wit="#D #N1">°ṃ sadṛśaṃ
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">ardha
+	  </lem>
+	  <rdg wit="#B #D #N1 #N2">ūrdhva°
+	  </rdg>
+	  <rdg wit="#U1">ārdha°
+	  </rdg>
+	</app>candrasadṛśaṃ
+	<app>
+	  <lem wit="#ceteri">jvalad ā
+	  </lem>
+	  <rdg wit="#U1">jalad
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">kāśa
+	  </lem>
+	  <rdg wit="#U1">°ā°
+	  </rdg>
+	  <rdg wit="#U2">°ākāraṃ
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">samākāraṃ
+	  </lem>
+	  <rdg wit="#D #N1 #N2 #U1">°samānakāraṃ
+	  </rdg>
+	  <rdg wit="#U2">samakāraṃ
+	  </rdg>
+	  <rdg wit="#L">°samākāra
+	  </rdg>
+	</app>/
+	<note type="source" target="#right(183)">PT
+	  <hi rend="sup">qcr \cdot YSV
+	  </hi> (Ed. p. 839): jvaladākāśatulyaṃvā bhāvayed rūpamātmanaḥ | etaj jyotirmayaṃ dehaṃ manomadhye tu lakṣayet |
+	</note>
+	<anchor xml:id="183"/>svaśarīrapari
+	<app>
+	  <lem wit="#ceteri">mitaṃ
+	  </lem>
+	  <rdg wit="#U1">°manomittaṃ
+	  </rdg>
+	</app> tejo
+	<app>
+	  <lem wit="#ceteri">mano
+	  </lem>
+	  <rdg wit="#U1">om.
+	  </rdg>
+	</app>madhye
+	<app>
+	  <lem wit="#D #P #N1 #U1">lakṣyaṃ
+	  </lem>
+	  <rdg wit="#E">tathyaṃ
+	  </rdg>
+	  <rdg wit="#B #L #U2">lakṣaṃ
+	  </rdg>
+	  <rdg wit="#N2">lakṣaṇaṃ
+	  </rdg>
+	</app> kartavyaṃ/
+	<note type="source" target="#right(184)">PT
+	  <hi rend="sup">qcr \cdot YSV
+	  </hi> (Ed. p. 839): eteṣāñ ca kṛte lakṣe nānāduḥkhaṃ praṇaśyati | manas astu malo yāti mahānando bhavet tataḥ |
+	</note>
+	<anchor xml:id="184"/>
+	<app>
+	  <lem wit="#P #L #U2">etasmill a
+	  </lem>
+	  <rdg wit="#U1">etasmin
+	  </rdg>
+	  <rdg wit="#ceteri">ekasmin
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">kṣye
+	  </lem>
+	  <rdg wit="#B #L #U2">lakṣe
+	  </rdg>
+	  <rdg wit="#U1">na lakṣye
+	  </rdg>
+	  <rdg wit="#N2">lakṣaṇo
+	  </rdg>
+	</app> kṛte
+	<app>
+	  <lem wit="#ceteri">sati
+	  </lem>
+	  <rdg wit="#B #L #U1 #U2">satī
+	  </rdg>
+	</app> manomadhye sthitasya
+	<app>
+	  <lem wit="#ceteri">malasya
+	  </lem>
+	  <rdg wit="#P">om.
+	  </rdg>
+	</app> dāho bhavati/ mana
+	<app>
+	  <lem wit="#ceteri">saḥ
+	  </lem>
+	  <rdg wit="#B #L">°saḥ ||
+	  </rdg>
+	  <rdg wit="#D">manaḥ saḥ
+	  </rdg>
+	</app> sattva
+	<app>
+	  <lem wit="#B #D #N2 #U1">guṇo
+	  </lem>
+	  <rdg wit="#N1">°guṇe
+	  </rdg>
+	  <rdg wit="#E #U2">°guṇa°
+	  </rdg>
+	  <rdg wit="#P #L">°guṇaḥ
+	  </rdg>
+	</app>
+	<app>
+	  <lem wit="#ceteri">prakaṭo
+	  </lem>
+	  <rdg wit="#E #U2">°prakāśo
+	  </rdg>
+	</app> bhavati/ puruṣa ānandamayo bhūtvā tiṣṭhati//
+	<hi rend="sup">
+	  <otherlanguage>
+	    <coro>[
+	      <lowroman>5
+	      </lowroman>]
+	    </coro>
+	  </otherlanguage>
+	</hi>\vfill
+      </p>
+    </div>
+  </div>
+  <div xml:id="div translation_1" class="translation">
+    <div type="trans">
+      <head/>
+      <p> The Kūrma vital wind exists within the eyes. It causes [the] opening and closing [of the eyes]. From the Kṛkala vital wind gagging arises. From the Devadatta vital wind jawning arises. From the Dhanaṃjaya vital wind speech arises.
+	<hi rend="sup">
+	  <coro>[
+	    <lowroman>20
+	    </lowroman>]
+	  </coro>
+	</hi>
+      </p>
+      <p>
+      </div>
+      <div type="trans">
+	<head/>\smallskip
+	<centerline>
+	  <textrm>
+	    <small>[
+	      <uproman>26
+	      </uproman>.
+	      <hi rend="sup">
+		<coro>
+		  <lowroman>1
+		  </lowroman>
+		  <lowroman>5
+		  </lowroman>
+		</coro>
+	      </hi>Madhyalakṣya]
+	    </small>
+	  </textrm>
+	</centerline> Now the central fixation is taught. White coloured, yellow coloured or red coloured or smoke coloured or blue coloured, like the flame of fire, equal to a lightning, like the orb of the sun, like a half moon, appearing like flaming space, measured according to one's own body, the fixation shall be directed onto the centre of the glowing mind. While abiding in the fixation, the burning of the impurity in the centre of the mind arises. The Sattva quality of the mind becomes revealed. After this has happened, the person abides in supreme bliss.
+      </p>
+    </div>
+  </div>
+</body>
+</text>
+</TEI>
